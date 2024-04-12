@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ff0000);
+    background-size: 500% 500%;
+    animation: Gradient 50s ease infinite;
+    overflow: hidden;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 0% 100%;
+    }
+
+    75% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #1E1E1E;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1, p {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    color:chocolate;
+    font-weight: bold;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.5s ease;
+}
+
+    a:hover {
+        background-color: #FF6F0F;
+    }
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
